@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>CALCULADORA</h1>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" placeholder="0" id="display" disabled>
+        </div>
+        <div class="buttons">
+            <input type="button" value="C" id="clear">
+
+            <input type="button" value="DEL" id="erase">
+            <input type="button" value="/" class="input-button" onclick="agregarNumero('/')">
+            <input type="button" value="*" class="input-button" onclick="agregarNumero('*')">
+
+            <input type="button" value="7" class="input-button" onclick="agregarNumero('7')">
+            <input type="button" value="8" class="input-button" onclick="agregarNumero('8')">
+            <input type="button" value="9" class="input-button" onclick="agregarNumero('9')">
+            <input type="button" value="-" class="input-button" onclick="agregarNumero('-')">
+
+            <input type="button" value="6" class="input-button" onclick="agregarNumero('6')">
+            <input type="button" value="5" class="input-button" onclick="agregarNumero('5')">
+            <input type="button" value="4" class="input-button" onclick="agregarNumero('4')">
+            <input type="button" value="+" class="input-button" onclick="agregarNumero('+')">
+
+            <input type="button" value="1" class="input-button" onclick="agregarNumero('1')">
+            <input type="button" value="2" class="input-button" onclick="agregarNumero('2')">
+            <input type="button" value="3" class="input-button" onclick="agregarNumero('3')">
+            
+            <input type="button" value="=" class="equal" onclick="calcular()">
+            <input type="button" value="0" class="input-button" onclick="agregarNumero('0')">
+            <input type="button" value="." class="input-button" onclick="agregarNumero('.')">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
